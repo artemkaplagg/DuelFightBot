@@ -1272,7 +1272,7 @@ async def show_stats(callback: CallbackQuery):
     avg_time = (user["total_answer_time"] / user["total_answers"]) if user["total_answers"] > 0 else 0
     avg_damage = (user["total_damage"] / user["total_duels"]) if user["total_duels"] > 0 else 0
     
-        stats_text = (
+    stats_text = (
         f"📊 ДЕТАЛЬНАЯ СТАТИСТИКА\n\n"
         f"{CLASSES[user['class']]['emoji']} {user['username']}\n"
         f"━━━━━━━━━━━━━━━━\n\n"
